@@ -41,11 +41,21 @@
 # print(sum(1,2,3,4,5,6,7,8,9,10))
 # print(sum(1,2,3,4,5))
 
-def names(fistname,lastname,*args):
-    print("firstname : ",fistname)
-    print("othernames  : ", args)
-    print("lastname  : ", lastname)
+# def names(fistname,lastname,*args):
+#     print("firstname : ",fistname)
+#     print("othernames  : ", args)
+#     print("lastname  : ", lastname)
     
-names("Akshay","shaym","vinayak","samadev","aswin")
+# names("Akshay","shaym","vinayak","samadev","aswin")
 
+
+# kwargs
+
+def details(*args,**kwargs):
+    print(kwargs)
+    print(args)
+    for key , value in kwargs.items():
+        print(f"{key}   : {value}")
+    
+details(1,2,3,name="vatakara")
     
