@@ -33,12 +33,9 @@ class Cars:
         
     def stop(self):
         print(f"{self.colour} car was stopped")
-        
-        
+                
 car1=Cars("Audi",100000,"black")
-
 car1.name="Benz"
-
 car1.start()
 car1.stop()
     

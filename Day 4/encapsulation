@@ -1,0 +1,21 @@
+class bank:
+    def __init__(self,name,salary):
+        self.name=name
+        self.__salary=salary
+ 
+    def get_salary(self):
+        print(f"salary is {self.__salary}")
+        
+    def set_salary(self,newSalary):
+        self.__salary=newSalary
+        
+        
+        
+user1=bank("Akshay",50000)
+print(user1.name)
+user1.__salary=1000
+user1.get_salary()
+user1.set_salary(2000000)
+user1.get_salary()
+print(user1.__salary)
+print(user1.__dict__)
